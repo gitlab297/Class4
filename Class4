@@ -1,0 +1,17 @@
+from random import randint
+
+
+class Building:
+    total = 0
+
+    def __init__(self):
+        self.numberOfFloors = randint(5, 25)
+        self.apartments = randint(10, 50)
+        Building.total = self.total + 1
+        print('Создан дом №', Building.total, 'кол-во этажей', self.numberOfFloors, 'кол-во квартир', self.apartments)
+
+for i in range(40):
+    Building()
+
+
+
